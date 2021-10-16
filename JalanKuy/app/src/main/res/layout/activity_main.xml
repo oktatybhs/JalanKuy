@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+<!--    tools:context="com.onv.jalankuy.activity.MainActivity">-->
+
+    <FrameLayout
+        android:id="@+id/flMain"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="@drawable/bg_home_wave"
+        android:backgroundTint="@color/colorPrimary"
+        android:fitsSystemWindows="true">
+
+
+        <RelativeLayout
+            android:id="@+id/rlAppName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="Hai, Okta!"
+                android:textColor="@android:color/white"
+                android:textSize="17sp" />
+            <!--                android:textStyle="italic" />-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsbold"
+                android:paddingTop="50dp"
+                android:text="Mau \nJalan \nKemana, nih?"
+                android:textColor="@android:color/white"
+                android:textSize="24sp" />
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:layout_width="84dp"
+            android:layout_height="85dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/oktafoto"/>
+
+    </FrameLayout>
+    <LinearLayout
+        android:id="@+id/llCurved"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/bg_home_curve"
+        android:orientation="horizontal"
+        android:backgroundTint="@color/colorPrimary"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="1dp"
+            app:strokeColor="@color/colorPrimaryDark"
+            >
+
+            <ImageView
+                android:id="@+id/imgdisc"
+                android:layout_width="500dp"
+                android:layout_height="260dp"
+                android:layout_gravity="center"
+                android:src="@drawable/borobudur" />
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        >
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:layout_margin="7dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="profileMenu"
+            android:orientation="vertical"
+
+            app:cardCornerRadius="15dp"
+            app:cardElevation="3dp"
+            app:strokeColor="@color/colorPrimaryDark"
+            app:strokeWidth="1dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:id="@+id/imgProfile"
+                    android:layout_width="51dp"
+                    android:layout_height="49dp"
+                    android:paddingStart="5dp"
+                    android:padding="5dp"
+                    android:layout_marginStart="30dp"
+
+                    android:src="@drawable/profile"
+                    android:tint="@color/colorPrimary" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imgProfile"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="-31dp"
+                    android:fontFamily="@font/rotablack"
+                    android:textSize="16dp"
+                    android:gravity="left"
+                    android:text="P R O F I L E"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:textColor="#034c8c"
+
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:layout_margin="7dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="historyMenu"
+            android:orientation="vertical"
+
+            app:cardCornerRadius="15dp"
+            app:cardElevation="3dp"
+            app:strokeColor="@color/colorPrimaryDark"
+            app:strokeWidth="1dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:id="@+id/imgHistory"
+                    android:layout_width="51dp"
+                    android:layout_height="49dp"
+                    android:layout_marginStart="30dp"
+                    android:paddingStart="5dp"
+                    android:padding="5dp"
+                    android:src="@drawable/history"
+                    android:tint="@color/colorPrimary" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imgHistory"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="-31dp"
+                    android:fontFamily="@font/rotablack"
+                    android:textSize="16dp"
+                    android:gravity="left"
+                    android:text="R I W A Y A T"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:textColor="#034c8c"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="8dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:layout_margin="7dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="bookKereta"
+            android:orientation="vertical"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="3dp"
+            app:strokeColor="@color/colorPrimaryDark"
+            app:strokeWidth="1dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:id="@+id/imgKereta"
+                    android:layout_width="51dp"
+                    android:layout_height="49dp"
+                    android:layout_marginStart="30dp"
+                    android:padding="5dp"
+                    android:paddingStart="5dp"
+                    android:src="@drawable/pesawat"
+                    android:tint="@color/colorPrimary" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imgKereta"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="-31dp"
+                    android:fontFamily="@font/rotablack"
+                    android:gravity="left"
+                    android:text="B O O K I N G  P E S A W A T"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:textColor="#034c8c"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:layout_margin="7dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="bookHotel"
+            android:orientation="vertical"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="3dp"
+            app:strokeColor="@color/colorPrimaryDark"
+            app:strokeWidth="1dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:id="@+id/imgHotel"
+                    android:layout_width="51dp"
+                    android:layout_height="49dp"
+                    android:layout_marginStart="30dp"
+                    android:paddingStart="5dp"
+                    android:padding="5dp"
+                    android:src="@drawable/hotel"
+                    android:tint="@color/colorPrimary" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imgHotel"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="-31dp"
+                    android:fontFamily="@font/rotablack"
+                    android:gravity="left"
+                    android:text="B O O K I N G  H O T E L"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:textColor="#034c8c"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/out"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginRight="64dp"
+        android:layout_marginBottom="16dp"
+        android:text="Sign Out"
+        android:textSize="16sp"
+        android:theme="@style/Theme.MaterialComponents.Light"
+        app:backgroundTint="@color/colorPrimaryDark"
+        app:cornerRadius="50dp" />
+
+</LinearLayout>

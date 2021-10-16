@@ -1,0 +1,70 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.onv.jalankuy"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->C:\Users\ASUS\AndroidStudioProjects\Pemesanan-Travel-master\TravelApps\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->C:\Users\ASUS\AndroidStudioProjects\Pemesanan-Travel-master\TravelApps\app\src\main\AndroidManifest.xml
+10
+11    <application
+11-->C:\Users\ASUS\AndroidStudioProjects\Pemesanan-Travel-master\TravelApps\app\src\main\AndroidManifest.xml:6:5-34:19
+12        android:allowBackup="true"
+12-->C:\Users\ASUS\AndroidStudioProjects\Pemesanan-Travel-master\TravelApps\app\src\main\AndroidManifest.xml:7:9-35
+13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+13-->[androidx.core:core:1.1.0] C:\Users\ASUS\.gradle\caches\transforms-3\055edd41a2360136ad1327f5fc70cb25\transformed\core-1.1.0\AndroidManifest.xml:24:18-86
+14        android:icon="@mipmap/logoicon2"
+14-->C:\Users\ASUS\AndroidStudioProjects\Pemesanan-Travel-master\TravelApps\app\src\main\AndroidManifest.xml:8:9-41
+15        android:label="@string/app_name"
+15-->C:\Users\ASUS\AndroidStudioProjects\Pemesanan-Travel-master\TravelApps\app\src\main\AndroidManifest.xml:9:9-41
+16        android:supportsRtl="true"
+16-->C:\Users\ASUS\AndroidStudioProjects\Pemesanan-Travel-master\TravelApps\app\src\main\AndroidManifest.xml:10:9-35
+17        android:theme="@style/AppTheme" >
+17-->C:\Users\ASUS\AndroidStudioProjects\Pemesanan-Travel-master\TravelApps\app\src\main\AndroidManifest.xml:11:9-40
+18        <activity
+18-->C:\Users\ASUS\AndroidStudioProjects\Pemesanan-Travel-master\TravelApps\app\src\main\AndroidManifest.xml:13:9-21:20
+19            android:name="com.onv.jalankuy.activity.MainActivity"
+19-->C:\Users\ASUS\AndroidStudioProjects\Pemesanan-Travel-master\TravelApps\app\src\main\AndroidManifest.xml:14:13-50
+20            android:screenOrientation="portrait" >
+20-->C:\Users\ASUS\AndroidStudioProjects\Pemesanan-Travel-master\TravelApps\app\src\main\AndroidManifest.xml:15:13-49
+21            <intent-filter>
+21-->C:\Users\ASUS\AndroidStudioProjects\Pemesanan-Travel-master\TravelApps\app\src\main\AndroidManifest.xml:16:13-20:29
+22                <action android:name="android.intent.action.MAIN" />
+22-->C:\Users\ASUS\AndroidStudioProjects\Pemesanan-Travel-master\TravelApps\app\src\main\AndroidManifest.xml:17:17-69
+22-->C:\Users\ASUS\AndroidStudioProjects\Pemesanan-Travel-master\TravelApps\app\src\main\AndroidManifest.xml:17:25-66
+23
+24                <category android:name="android.intent.category.LAUNCHER" />
+24-->C:\Users\ASUS\AndroidStudioProjects\Pemesanan-Travel-master\TravelApps\app\src\main\AndroidManifest.xml:19:17-77
+24-->C:\Users\ASUS\AndroidStudioProjects\Pemesanan-Travel-master\TravelApps\app\src\main\AndroidManifest.xml:19:27-74
+25            </intent-filter>
+26        </activity>
+27        <activity
+27-->C:\Users\ASUS\AndroidStudioProjects\Pemesanan-Travel-master\TravelApps\app\src\main\AndroidManifest.xml:22:9-24:52
+28            android:name="com.onv.jalankuy.activity.ProfileActivity"
+28-->C:\Users\ASUS\AndroidStudioProjects\Pemesanan-Travel-master\TravelApps\app\src\main\AndroidManifest.xml:23:13-53
+29            android:screenOrientation="portrait" />
+29-->C:\Users\ASUS\AndroidStudioProjects\Pemesanan-Travel-master\TravelApps\app\src\main\AndroidManifest.xml:24:13-49
+30        <activity
+30-->C:\Users\ASUS\AndroidStudioProjects\Pemesanan-Travel-master\TravelApps\app\src\main\AndroidManifest.xml:25:9-27:52
+31            android:name="com.onv.jalankuy.activity.HistoryActivity"
+31-->C:\Users\ASUS\AndroidStudioProjects\Pemesanan-Travel-master\TravelApps\app\src\main\AndroidManifest.xml:26:13-53
+32            android:screenOrientation="portrait" />
+32-->C:\Users\ASUS\AndroidStudioProjects\Pemesanan-Travel-master\TravelApps\app\src\main\AndroidManifest.xml:27:13-49
+33        <activity
+33-->C:\Users\ASUS\AndroidStudioProjects\Pemesanan-Travel-master\TravelApps\app\src\main\AndroidManifest.xml:28:9-30:52
+34            android:name="com.onv.jalankuy.activity.BookPesawatActivity"
+34-->C:\Users\ASUS\AndroidStudioProjects\Pemesanan-Travel-master\TravelApps\app\src\main\AndroidManifest.xml:29:13-57
+35            android:screenOrientation="portrait" />
+35-->C:\Users\ASUS\AndroidStudioProjects\Pemesanan-Travel-master\TravelApps\app\src\main\AndroidManifest.xml:30:13-49
+36        <activity
+36-->C:\Users\ASUS\AndroidStudioProjects\Pemesanan-Travel-master\TravelApps\app\src\main\AndroidManifest.xml:31:9-33:52
+37            android:name="com.onv.jalankuy.activity.BookHotelActivity"
+37-->C:\Users\ASUS\AndroidStudioProjects\Pemesanan-Travel-master\TravelApps\app\src\main\AndroidManifest.xml:32:13-55
+38            android:screenOrientation="portrait" />
+38-->C:\Users\ASUS\AndroidStudioProjects\Pemesanan-Travel-master\TravelApps\app\src\main\AndroidManifest.xml:33:13-49
+39    </application>
+40
+41</manifest>
