@@ -1,9 +1,11 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.test:monitor:1.2.0@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/88a944566c75852d67fe7099d013d198/transformed/monitor-1.2.0/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/88a944566c75852d67fe7099d013d198/transformed/monitor-1.2.0/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/88a944566c75852d67fe7099d013d198/transformed/monitor-1.2.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/a050520f4044ed7c806006970f18f53d/transformed/monitor-1.2.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/9386c97a214a9de4bf6985e54b439eb2/transformed/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/9386c97a214a9de4bf6985e54b439eb2/transformed/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/9386c97a214a9de4bf6985e54b439eb2/transformed/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.test/monitor/1.2.0/2af6ec82fa4b1151212001e83514ccb39f360adc/monitor-1.2.0-javadoc.jar!/" />

@@ -10,12 +10,27 @@ androidx/transition/R.java
  androidx.transition.R$string
  androidx.transition.R$style
  androidx.transition.R$styleable
+com/onv/jalankuy/adapter/AlertDialogManager.java
+ com.onv.jalankuy.adapter.AlertDialogManager
+ com.onv.jalankuy.adapter.AlertDialogManager$1
 androidx/print/R.java
  androidx.print.R
 com/onv/jalankuy/activity/BookHotelActivity.java
  com.onv.jalankuy.activity.BookHotelActivity
-com/onv/jalankuy/activity/IntroActivity.java
- com.onv.jalankuy.activity.IntroActivity
+ com.onv.jalankuy.activity.BookHotelActivity$1
+ com.onv.jalankuy.activity.BookHotelActivity$2
+ com.onv.jalankuy.activity.BookHotelActivity$3
+ com.onv.jalankuy.activity.BookHotelActivity$4
+ com.onv.jalankuy.activity.BookHotelActivity$5
+ com.onv.jalankuy.activity.BookHotelActivity$5$1
+ com.onv.jalankuy.activity.BookHotelActivity$6
+ com.onv.jalankuy.activity.BookHotelActivity$7
+ com.onv.jalankuy.activity.BookHotelActivity$8
+ com.onv.jalankuy.activity.BookHotelActivity$9
+com/onv/jalankuy/activity/MainActivity.java
+ com.onv.jalankuy.activity.MainActivity
+ com.onv.jalankuy.activity.MainActivity$1
+ com.onv.jalankuy.activity.MainActivity$1$1
 androidx/cursoradapter/R.java
  androidx.cursoradapter.R
 androidx/vectordrawable/R.java
@@ -32,6 +47,8 @@ androidx/vectordrawable/R.java
  androidx.vectordrawable.R$styleable
 com/onv/jalankuy/activity/HistoryActivity.java
  com.onv.jalankuy.activity.HistoryActivity
+ com.onv.jalankuy.activity.HistoryActivity$1
+ com.onv.jalankuy.activity.HistoryActivity$1$1
 androidx/lifecycle/livedata/core/R.java
  androidx.lifecycle.livedata.core.R
 androidx/cardview/R.java
@@ -114,6 +131,10 @@ androidx/arch/core/R.java
  androidx.arch.core.R
 androidx/documentfile/R.java
  androidx.documentfile.R
+com/onv/jalankuy/adapter/HistoryAdapter.java
+ com.onv.jalankuy.adapter.HistoryAdapter
+com/onv/jalankuy/model/HistoryModel.java
+ com.onv.jalankuy.model.HistoryModel
 androidx/fragment/R.java
  androidx.fragment.R
  androidx.fragment.R$attr
@@ -128,6 +149,14 @@ androidx/fragment/R.java
  androidx.fragment.R$styleable
 com/onv/jalankuy/activity/BookPesawatActivity.java
  com.onv.jalankuy.activity.BookPesawatActivity
+ com.onv.jalankuy.activity.BookPesawatActivity$1
+ com.onv.jalankuy.activity.BookPesawatActivity$2
+ com.onv.jalankuy.activity.BookPesawatActivity$3
+ com.onv.jalankuy.activity.BookPesawatActivity$4
+ com.onv.jalankuy.activity.BookPesawatActivity$5
+ com.onv.jalankuy.activity.BookPesawatActivity$5$1
+ com.onv.jalankuy.activity.BookPesawatActivity$6
+ com.onv.jalankuy.activity.BookPesawatActivity$7
 androidx/savedstate/R.java
  androidx.savedstate.R
 androidx/customview/R.java
@@ -295,6 +324,14 @@ androidx/viewpager/R.java
  androidx.viewpager.R$styleable
 androidx/localbroadcastmanager/R.java
  androidx.localbroadcastmanager.R
+com/onv/jalankuy/activity/ProfileActivity.java
+ com.onv.jalankuy.activity.ProfileActivity
+androidx/lifecycle/viewmodel/R.java
+ androidx.lifecycle.viewmodel.R
+com/onv/jalankuy/database/DatabaseHelper.java
+ com.onv.jalankuy.database.DatabaseHelper
+com/onv/jalankuy/activity/IntroActivity.java
+ com.onv.jalankuy.activity.IntroActivity
 androidx/vectordrawable/animated/R.java
  androidx.vectordrawable.animated.R
  androidx.vectordrawable.animated.R$attr
@@ -307,9 +344,3 @@ androidx/vectordrawable/animated/R.java
  androidx.vectordrawable.animated.R$string
  androidx.vectordrawable.animated.R$style
  androidx.vectordrawable.animated.R$styleable
-androidx/lifecycle/viewmodel/R.java
- androidx.lifecycle.viewmodel.R
-com/onv/jalankuy/activity/ProfileActivity.java
- com.onv.jalankuy.activity.ProfileActivity
-com/onv/jalankuy/activity/MainActivity.java
- com.onv.jalankuy.activity.MainActivity
