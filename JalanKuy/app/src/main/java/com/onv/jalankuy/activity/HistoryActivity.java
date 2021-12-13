@@ -29,6 +29,7 @@ public class HistoryActivity extends AppCompatActivity {
     SQLiteDatabase db;
     //SessionManager session;
     String id_book = "", asal, tujuan, tanggal, dewasa, anak, riwayat, total;
+    String id_book_hotel = "", lokasi, hotel, orang, tanggalci, tanggalco ;
     String email;
     TextView tvNotFound;
 
@@ -88,6 +89,26 @@ public class HistoryActivity extends AppCompatActivity {
             hasil.add(new HistoryModel(id_book, tanggal, riwayat, total, R.drawable.profile));
         }
 
+
+        cursor = db.rawQuery("SELECT * FROM TB_BHTL, TB_HARGATOTAL WHERE TB_BHTL.id_bhtl = TB_HARGATOTAL.id_bhtl AND username='" + email + "'", null);
+        cursor.moveToFirst();
+        for (int i = 0; i < cursor.getCount(); i++) {
+            cursor.moveToPosition(i);
+            id_book = cursor.getString(0);
+            lokasi= cursor.getString(1);
+            hotel = cursor.getString(2);
+            tanggalci = cursor.getString(3);
+            tanggalco = cursor.getString(4);
+            orang = cursor.getString(6);
+            total = cursor.getString(11);
+            riwayat = "Berhasil melakukan booking hotel\n\n Lokasi: " + lokasi +
+                    "\nHotel : " + hotel +
+                    "\nCheck-in  : " + tanggalci +
+                    "\nCheck-out  : " + tanggalco +
+                    "\nOrang : " + orang + "\n";
+            hasil.add(new HistoryModel(id_book, tanggalci, riwayat, total, R.drawable.profile));
+        }
+
         ListView listBook = findViewById(R.id.list_booking);
         HistoryAdapter arrayAdapter = new HistoryAdapter(this, hasil);
         listBook.setAdapter(arrayAdapter);
@@ -97,6 +118,7 @@ public class HistoryActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 final String selection = hasil.get(i).getIdBook();
+
                 final CharSequence[] dialogitem = {"Hapus Data"};
                 AlertDialog.Builder builder = new AlertDialog.Builder(HistoryActivity.this);
                 builder.setTitle("Pilihan");
@@ -105,7 +127,9 @@ public class HistoryActivity extends AppCompatActivity {
                         SQLiteDatabase db = dbHelper.getWritableDatabase();
                         try {
                             db.execSQL("DELETE FROM TB_BOOK where id_book = " + selection + "");
+                            db.execSQL("DELETE FROM TB_BHTL where id_book_hotel = " + selection + "");
                             id_book = "";
+                            id_book_hotel = "";
                         } catch (Exception e) {
                             e.printStackTrace();
                         }

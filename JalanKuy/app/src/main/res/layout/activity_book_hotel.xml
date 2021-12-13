@@ -220,19 +220,6 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Kamar"
-                        android:fontFamily="@font/rotareguler"
-                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
-                        android:textColor="@color/black" />
-
-                    <Spinner
-                        android:id="@+id/kamar"
-                        android:layout_width="match_parent"
-                        android:layout_height="40dp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
                         android:text="Orang"
                         android:fontFamily="@font/rotareguler"

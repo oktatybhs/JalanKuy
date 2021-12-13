@@ -7,7 +7,7 @@
 7    <uses-sdk
 8        android:minSdkVersion="21"
 8-->C:\Users\ASUS\AndroidStudioProjects\JalanKuy\app\src\main\AndroidManifest.xml
-9        android:targetSdkVersion="29" />
+9        android:targetSdkVersion="30" />
 9-->C:\Users\ASUS\AndroidStudioProjects\JalanKuy\app\src\main\AndroidManifest.xml
 10
 11    <application
@@ -15,7 +15,7 @@
 12        android:allowBackup="true"
 12-->C:\Users\ASUS\AndroidStudioProjects\JalanKuy\app\src\main\AndroidManifest.xml:7:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-13-->[androidx.core:core:1.1.0] C:\Users\ASUS\.gradle\caches\transforms-3\055edd41a2360136ad1327f5fc70cb25\transformed\core-1.1.0\AndroidManifest.xml:24:18-86
+13-->[androidx.core:core:1.1.0] C:\Users\ASUS\.gradle\caches\transforms-3\bbc5c93593a298ed4610baa13b8ec69c\transformed\core-1.1.0\AndroidManifest.xml:24:18-86
 14        android:debuggable="true"
 15        android:icon="@mipmap/logoicon2"
 15-->C:\Users\ASUS\AndroidStudioProjects\JalanKuy\app\src\main\AndroidManifest.xml:8:9-41
@@ -23,49 +23,50 @@
 16-->C:\Users\ASUS\AndroidStudioProjects\JalanKuy\app\src\main\AndroidManifest.xml:9:9-41
 17        android:supportsRtl="true"
 17-->C:\Users\ASUS\AndroidStudioProjects\JalanKuy\app\src\main\AndroidManifest.xml:10:9-35
-18        android:theme="@style/AppTheme" >
-18-->C:\Users\ASUS\AndroidStudioProjects\JalanKuy\app\src\main\AndroidManifest.xml:11:9-40
-19        <activity
-19-->C:\Users\ASUS\AndroidStudioProjects\JalanKuy\app\src\main\AndroidManifest.xml:13:9-21:20
-20            android:name="com.onv.jalankuy.activity.MainActivity"
-20-->C:\Users\ASUS\AndroidStudioProjects\JalanKuy\app\src\main\AndroidManifest.xml:14:13-50
-21            android:screenOrientation="portrait" >
-21-->C:\Users\ASUS\AndroidStudioProjects\JalanKuy\app\src\main\AndroidManifest.xml:15:13-49
-22            <intent-filter>
-22-->C:\Users\ASUS\AndroidStudioProjects\JalanKuy\app\src\main\AndroidManifest.xml:16:13-20:29
-23                <action android:name="android.intent.action.MAIN" />
-23-->C:\Users\ASUS\AndroidStudioProjects\JalanKuy\app\src\main\AndroidManifest.xml:17:17-69
-23-->C:\Users\ASUS\AndroidStudioProjects\JalanKuy\app\src\main\AndroidManifest.xml:17:25-66
-24
-25                <category android:name="android.intent.category.LAUNCHER" />
-25-->C:\Users\ASUS\AndroidStudioProjects\JalanKuy\app\src\main\AndroidManifest.xml:19:17-77
-25-->C:\Users\ASUS\AndroidStudioProjects\JalanKuy\app\src\main\AndroidManifest.xml:19:27-74
-26            </intent-filter>
-27        </activity>
-28        <activity
-28-->C:\Users\ASUS\AndroidStudioProjects\JalanKuy\app\src\main\AndroidManifest.xml:22:9-24:52
-29            android:name="com.onv.jalankuy.activity.ProfileActivity"
-29-->C:\Users\ASUS\AndroidStudioProjects\JalanKuy\app\src\main\AndroidManifest.xml:23:13-53
-30            android:screenOrientation="portrait" />
-30-->C:\Users\ASUS\AndroidStudioProjects\JalanKuy\app\src\main\AndroidManifest.xml:24:13-49
-31        <activity
-31-->C:\Users\ASUS\AndroidStudioProjects\JalanKuy\app\src\main\AndroidManifest.xml:25:9-27:52
-32            android:name="com.onv.jalankuy.activity.HistoryActivity"
-32-->C:\Users\ASUS\AndroidStudioProjects\JalanKuy\app\src\main\AndroidManifest.xml:26:13-53
-33            android:screenOrientation="portrait" />
-33-->C:\Users\ASUS\AndroidStudioProjects\JalanKuy\app\src\main\AndroidManifest.xml:27:13-49
-34        <activity
-34-->C:\Users\ASUS\AndroidStudioProjects\JalanKuy\app\src\main\AndroidManifest.xml:28:9-30:52
-35            android:name="com.onv.jalankuy.activity.BookPesawatActivity"
-35-->C:\Users\ASUS\AndroidStudioProjects\JalanKuy\app\src\main\AndroidManifest.xml:29:13-57
-36            android:screenOrientation="portrait" />
-36-->C:\Users\ASUS\AndroidStudioProjects\JalanKuy\app\src\main\AndroidManifest.xml:30:13-49
-37        <activity
-37-->C:\Users\ASUS\AndroidStudioProjects\JalanKuy\app\src\main\AndroidManifest.xml:31:9-33:52
-38            android:name="com.onv.jalankuy.activity.BookHotelActivity"
-38-->C:\Users\ASUS\AndroidStudioProjects\JalanKuy\app\src\main\AndroidManifest.xml:32:13-55
-39            android:screenOrientation="portrait" />
-39-->C:\Users\ASUS\AndroidStudioProjects\JalanKuy\app\src\main\AndroidManifest.xml:33:13-49
-40    </application>
-41
-42</manifest>
+18        android:testOnly="true"
+19        android:theme="@style/AppTheme" >
+19-->C:\Users\ASUS\AndroidStudioProjects\JalanKuy\app\src\main\AndroidManifest.xml:11:9-40
+20        <activity
+20-->C:\Users\ASUS\AndroidStudioProjects\JalanKuy\app\src\main\AndroidManifest.xml:13:9-21:20
+21            android:name="com.onv.jalankuy.activity.MainActivity"
+21-->C:\Users\ASUS\AndroidStudioProjects\JalanKuy\app\src\main\AndroidManifest.xml:14:13-50
+22            android:screenOrientation="portrait" >
+22-->C:\Users\ASUS\AndroidStudioProjects\JalanKuy\app\src\main\AndroidManifest.xml:15:13-49
+23            <intent-filter>
+23-->C:\Users\ASUS\AndroidStudioProjects\JalanKuy\app\src\main\AndroidManifest.xml:16:13-20:29
+24                <action android:name="android.intent.action.MAIN" />
+24-->C:\Users\ASUS\AndroidStudioProjects\JalanKuy\app\src\main\AndroidManifest.xml:17:17-69
+24-->C:\Users\ASUS\AndroidStudioProjects\JalanKuy\app\src\main\AndroidManifest.xml:17:25-66
+25
+26                <category android:name="android.intent.category.LAUNCHER" />
+26-->C:\Users\ASUS\AndroidStudioProjects\JalanKuy\app\src\main\AndroidManifest.xml:19:17-77
+26-->C:\Users\ASUS\AndroidStudioProjects\JalanKuy\app\src\main\AndroidManifest.xml:19:27-74
+27            </intent-filter>
+28        </activity>
+29        <activity
+29-->C:\Users\ASUS\AndroidStudioProjects\JalanKuy\app\src\main\AndroidManifest.xml:22:9-24:52
+30            android:name="com.onv.jalankuy.activity.ProfileActivity"
+30-->C:\Users\ASUS\AndroidStudioProjects\JalanKuy\app\src\main\AndroidManifest.xml:23:13-53
+31            android:screenOrientation="portrait" />
+31-->C:\Users\ASUS\AndroidStudioProjects\JalanKuy\app\src\main\AndroidManifest.xml:24:13-49
+32        <activity
+32-->C:\Users\ASUS\AndroidStudioProjects\JalanKuy\app\src\main\AndroidManifest.xml:25:9-27:52
+33            android:name="com.onv.jalankuy.activity.HistoryActivity"
+33-->C:\Users\ASUS\AndroidStudioProjects\JalanKuy\app\src\main\AndroidManifest.xml:26:13-53
+34            android:screenOrientation="portrait" />
+34-->C:\Users\ASUS\AndroidStudioProjects\JalanKuy\app\src\main\AndroidManifest.xml:27:13-49
+35        <activity
+35-->C:\Users\ASUS\AndroidStudioProjects\JalanKuy\app\src\main\AndroidManifest.xml:28:9-30:52
+36            android:name="com.onv.jalankuy.activity.BookPesawatActivity"
+36-->C:\Users\ASUS\AndroidStudioProjects\JalanKuy\app\src\main\AndroidManifest.xml:29:13-57
+37            android:screenOrientation="portrait" />
+37-->C:\Users\ASUS\AndroidStudioProjects\JalanKuy\app\src\main\AndroidManifest.xml:30:13-49
+38        <activity
+38-->C:\Users\ASUS\AndroidStudioProjects\JalanKuy\app\src\main\AndroidManifest.xml:31:9-33:52
+39            android:name="com.onv.jalankuy.activity.BookHotelActivity"
+39-->C:\Users\ASUS\AndroidStudioProjects\JalanKuy\app\src\main\AndroidManifest.xml:32:13-55
+40            android:screenOrientation="portrait" />
+40-->C:\Users\ASUS\AndroidStudioProjects\JalanKuy\app\src\main\AndroidManifest.xml:33:13-49
+41    </application>
+42
+43</manifest>
