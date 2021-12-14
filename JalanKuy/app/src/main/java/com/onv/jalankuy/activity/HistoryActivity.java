@@ -101,11 +101,11 @@ public class HistoryActivity extends AppCompatActivity {
             tanggalco = cursor.getString(4);
             orang = cursor.getString(6);
             total = cursor.getString(11);
-            riwayat = "Berhasil melakukan booking hotel\n\n Lokasi: " + lokasi +
-                    "\nHotel : " + hotel +
-                    "\nCheck-in  : " + tanggalci +
+            riwayat = "Berhasil melakukan booking hotel\n\nLokasi        : " + lokasi +
+                    "\nHotel          : " + hotel +
+                    "\nCheck-in    : " + tanggalci +
                     "\nCheck-out  : " + tanggalco +
-                    "\nOrang : " + orang + "\n";
+                    "\nOrang          : " + orang + "\n";
             hasil.add(new HistoryModel(id_book, tanggalci, riwayat, total, R.drawable.profile));
         }
 
@@ -147,6 +147,7 @@ public class HistoryActivity extends AppCompatActivity {
             tvNotFound.setVisibility(View.GONE);
             listBook.setVisibility(View.VISIBLE);
         }
+
 
     }
 }

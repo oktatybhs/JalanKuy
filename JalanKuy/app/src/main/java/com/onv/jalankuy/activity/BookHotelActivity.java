@@ -31,14 +31,14 @@ public class BookHotelActivity extends AppCompatActivity {
     protected Cursor cursor;
     DatabaseHelper dbHelper;
     SQLiteDatabase db;
-    Spinner spinLokasi, spinKamar, spinOrang, spinHotel;
+    Spinner spinLokasi, spinOrang, spinHotel;
 
     String email;
     int id_book_hotel;
-    public String sLokasi,sTanggalCI, sTanggalCO, sKamar, sOrang, sHotel;
-    int jmlKamar, jmlOrang;
-    int hargaKamar, hargaOrang;
-    int hargaTotalKamar, hargaTotalOrang, hargaTotal;
+    public String sLokasi,sTanggalCI, sTanggalCO, sOrang, sHotel;
+    int jmlOrang;
+    int hargaOrang;
+    int hargaTotalOrang, hargaTotal;
     private EditText etTanggalCI, etTanggalCO;
     private DatePickerDialog dpTanggalCI, dpTanggalCO;
     Calendar newCalendar = Calendar.getInstance();
@@ -53,12 +53,10 @@ public class BookHotelActivity extends AppCompatActivity {
 
         final String[] lokasi = {"Jakarta", "Bandung", "Purwokerto", "Yogyakarta", "Surabaya"};
         final String[] hotel = {"Aston", "OYO"};
-//        final String[] kamar = {"Standar Room", "Superior Room", "Deluxe Room", "Single Room", "Twin Room", "Family Room"};
         final String[] orang = {"1", "2", "3", "4", "5", "6"};
 
         spinLokasi = findViewById(R.id.lokasi);
         spinHotel = findViewById(R.id.hotel);
-//        spinKamar = findViewById(R.id.kamar);
         spinOrang = findViewById(R.id.orang);
 
         ArrayAdapter<CharSequence> adapterLokasi = new ArrayAdapter<CharSequence>(this, android.R.layout.simple_spinner_item, lokasi);
@@ -68,10 +66,6 @@ public class BookHotelActivity extends AppCompatActivity {
         ArrayAdapter<CharSequence> adapterHotel = new ArrayAdapter<CharSequence>(this, android.R.layout.simple_spinner_item, hotel);
         adapterHotel.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinHotel.setAdapter(adapterHotel);
-
-//        ArrayAdapter<CharSequence> adapterKamar = new ArrayAdapter<CharSequence>(this, android.R.layout.simple_spinner_item, kamar);
-//        adapterKamar.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-//        spinKamar.setAdapter(adapterKamar);
 
         ArrayAdapter<CharSequence> adapterOrang = new ArrayAdapter<CharSequence>(this, android.R.layout.simple_spinner_item, orang);
         adapterOrang.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -100,19 +94,6 @@ public class BookHotelActivity extends AppCompatActivity {
 
             }
         });
-
-
-//        spinKamar.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-//            @Override
-//            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-//                sKamar = parent.getItemAtPosition(position).toString();
-//            }
-//
-//            @Override
-//            public void onNothingSelected(AdapterView<?> parent) {
-//
-//            }
-//        });
 
         spinOrang.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
@@ -207,37 +188,26 @@ public class BookHotelActivity extends AppCompatActivity {
 
     public void perhitunganHarga() {
         if (sLokasi.equalsIgnoreCase("jakarta") && sHotel.equalsIgnoreCase("aston")) {
-
-            hargaOrang = 200000;
+            hargaOrang = 600000;
         } else if (sLokasi.equalsIgnoreCase("jakarta") && sHotel.equalsIgnoreCase("oyo")) {
-
-            hargaOrang = 400000;
+            hargaOrang = 300000;
         } else if (sLokasi.equalsIgnoreCase("bandung") && sHotel.equalsIgnoreCase("aston")) {
-
-            hargaOrang = 200000;
+            hargaOrang = 550000;
         } else if (sLokasi.equalsIgnoreCase("bandung") && sHotel.equalsIgnoreCase("oyo")) {
-
-            hargaOrang = 40000;
+            hargaOrang = 250000;
         } else if (sLokasi.equalsIgnoreCase("purwokerto") && sHotel.equalsIgnoreCase("aston")) {
-
-            hargaOrang = 400000;
+            hargaOrang = 480000;
         } else if (sLokasi.equalsIgnoreCase("purwokerto") && sHotel.equalsIgnoreCase("oyo")) {
-
-            hargaOrang = 100000;
+            hargaOrang = 210000;
         } else if (sLokasi.equalsIgnoreCase("yogyakarta") && sHotel.equalsIgnoreCase("aston")) {
-
             hargaOrang = 400000;
         } else if (sLokasi.equalsIgnoreCase("yogyakarta") && sHotel.equalsIgnoreCase("oyo")) {
-
-            hargaOrang = 40000;
+            hargaOrang = 180000;
         } else if (sLokasi.equalsIgnoreCase("surabaya") && sHotel.equalsIgnoreCase("aston")) {
-
-            hargaOrang = 400000;
+            hargaOrang = 750000;
         } else if (sLokasi.equalsIgnoreCase("surabaya") && sHotel.equalsIgnoreCase("oyo")) {
-
-            hargaOrang = 400000;
+            hargaOrang = 380000;
         }
-
 
             jmlOrang = Integer.parseInt(sOrang);
 

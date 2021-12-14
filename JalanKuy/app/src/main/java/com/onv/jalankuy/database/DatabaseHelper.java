@@ -78,21 +78,4 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db = this.getWritableDatabase();
     }
 
-    public boolean Register(String username, String password, String name) throws SQLException {
-
-        @SuppressLint("Recycle") Cursor mCursor = db.rawQuery("INSERT INTO " + TABLE_USER + "(" + COL_USERNAME + ", " + COL_PASSWORD + ", " + COL_NAME + ") VALUES (?,?,?)", new String[]{username, password, name});
-        if (mCursor != null) {
-            return mCursor.getCount() > 0;
-        }
-        return false;
-    }
-
-    public boolean Login(String username, String password) throws SQLException {
-        @SuppressLint("Recycle") Cursor mCursor = db.rawQuery("SELECT * FROM " + TABLE_USER + " WHERE " + COL_USERNAME + "=? AND " + COL_PASSWORD + "=?", new String[]{username, password});
-        if (mCursor != null) {
-            return mCursor.getCount() > 0;
-        }
-        return false;
-    }
-
 }
